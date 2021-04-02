@@ -8,13 +8,20 @@ La información se ha seleccionado en un contexto de análisis de recursos infor
 
 Se presenta una solución que permite la extracción de contenido web dinámico, en donde la presentación del contenido corresponde a cargas parciales de secciones cargadas de manera asíncrona. Se hace uso de programación multihilo y procesamiento de tareas para optimizar los tiempos de respuesta diferenciando entre los procesos de extracción de contenido web y la generación de los documentos csv. En este caso se generan inicialmente varios ficheros luego de extraer el contenido de las diferentes pestañas de una página. Luego, se realizará un procesamiento de tratamiento de los datos e integración de la fuentes de información.
 
+## Dataset
+En este caso debido a la versatilidad de la implementación del código fuente es posible utilizar el mismo código para extraer información de diferentes repositorios del portal. En este caso se realizará la integración de dos fuentes tenemos:
+Empresas activas: Este servicio muestra las empresas activas por provincia y condición jurídica (2017-1999).
+Hipotecas: Este servicio muestra las Hipotecas constituidas sobre el total de fincas por provincias y por meses(2003-2018).
+empresas_hipotecas_españa_2013_2017.csv
+
+
 ## Miembros del equipo
 
 La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Miguel Alejandro Ponce**.
 
 ## Ficheros del código fuente
 
-* **src/web-scraper-esri.py**: punto de entrada al programa. Inicia el proceso de scraping. Contiene la implementación multihilo para extraer un conjunto de datos inicala a partir de la base de las bases de datos online [PlaneCrashInfo](https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089) y [PlaneCrashInfo](https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089).
+* **src/web-scraper-esri.py**: punto de entrada al programa. Inicia el proceso de scraping. Contiene la implementación multihilo para extraer un conjunto de datos inicala a partir de la base de las bases de datos online [Hipoetecas(2003-2018)](https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089) y [Empresas(2017-1999)](https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089).
 * **src/data**: contiene los datos extraidos de las fuentes sin trateminto.
 * 
 
