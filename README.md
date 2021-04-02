@@ -4,7 +4,7 @@
 La información se ha seleccionado en un contexto de análisis de recursos información económica e hipotecas de empresas por provincia en España. El sitio web es un recurso de open data para el análisis de información de diversos contenidos de datos abiertos para que se puedan consultar y analizar. Se elige el sitio web debido a que presentan los conjuntos de datos y posibles datos relacionados por tanto es posible realizar cruces de información y generar conjuntos de datos con mayores características.
 
 
-## Detalle solución y Complejidad
+## Detalle solución y complejidad
 
 Se presenta una solución que permite la extracción de contenido web dinámico, en donde la presentación del contenido corresponde a cargas parciales de secciones cargadas de manera asíncrona. Se hace uso de programación multihilo y procesamiento de tareas para optimizar los tiempos de respuesta diferenciando entre los procesos de extracción de contenido web y la generación de los documentos csv. En este caso se generan inicialmente varios ficheros luego de extraer el contenido de las diferentes pestañas de una página. Luego, se realizará un procesamiento de tratamiento de los datos e integración de la fuentes de información.
 
@@ -24,6 +24,8 @@ La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Mig
 2. Mitchel, R. (2015). _Web Scraping with Python: Collecting Data from the Modern Web_. O'Reilly Media, Inc. Chapter 1. Your First Web Scraper.
 
 ### Ejemplo Salida
+
+```js
 
 MainThread run_blocking_tasks: Inicia tarea procesamiento
 MainThread run_blocking_tasks: Inicia procesar web-scraping
@@ -110,3 +112,5 @@ ThreadPoolExecutor-9_0 run_blocking_tasks: Inicia exportar csv
 ThreadPoolExecutor-9_0 run_blocking_tasks: Ruta: empresas-activas_5.csv
 ThreadPoolExecutor-9_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Finaliza tarea procesamiento
+
+```
