@@ -33,91 +33,91 @@ La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Mig
 ### Ejemplo Salida
 
 ```js
-
 MainThread run_blocking_tasks: Inicia tarea procesamiento
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:33267/devtools/browser/bb6cb87b-2d8b-4fbd-a2af-544b38d96e3c
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:48721/devtools/browser/9366e5b0-7020-48c4-948d-99cda53d3932
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-0_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-0_0 run_blocking_tasks: Ruta: hipotecas-constituidas_1.csv
+ThreadPoolExecutor-0_0 run_blocking_tasks: Ruta: ./data/hipotecas-constituidas_1.csv
 ThreadPoolExecutor-0_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089&page=2
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:38681/devtools/browser/223fde47-ab14-4a75-8112-a702c3212712
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:33175/devtools/browser/2fee17aa-2c01-459d-b4ed-bccc68d31333
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-1_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-1_0 run_blocking_tasks: Ruta: hipotecas-constituidas_2.csv
+ThreadPoolExecutor-1_0 run_blocking_tasks: Ruta: ./data/hipotecas-constituidas_2.csv
 ThreadPoolExecutor-1_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089&page=3
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:47413/devtools/browser/881db4b9-9731-4424-bcf7-57e539606d0f
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:52799/devtools/browser/5f353a8c-f4c5-4b71-b29a-611a383501b7
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-2_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-2_0 run_blocking_tasks: Ruta: hipotecas-constituidas_3.csv
+ThreadPoolExecutor-2_0 run_blocking_tasks: Ruta: ./data/hipotecas-constituidas_3.csv
 ThreadPoolExecutor-2_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089&page=4
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:41875/devtools/browser/53aa06e8-8092-4eca-b2a1-79323aa2f5cb
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:41403/devtools/browser/2ac236e1-ee35-4832-a4f2-b711354fa2e1
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-3_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-3_0 run_blocking_tasks: Ruta: hipotecas-constituidas_4.csv
+ThreadPoolExecutor-3_0 run_blocking_tasks: Ruta: ./data/hipotecas-constituidas_4.csv
 ThreadPoolExecutor-3_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089&page=5
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:53753/devtools/browser/5de9463c-14d7-4795-88e5-6f11d127cadf
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:39743/devtools/browser/cb7df125-92de-4548-a5f7-5065e78eed01
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-4_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-4_0 run_blocking_tasks: Ruta: hipotecas-constituidas_5.csv
+ThreadPoolExecutor-4_0 run_blocking_tasks: Ruta: ./data/hipotecas-constituidas_5.csv
 ThreadPoolExecutor-4_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Finaliza tarea procesamiento
-MainThread run_blocking_tasks: Peticiones hipotecas reprocesar [<__main__.Peticion object at 0x7ff7aef4f970>, <__main__.Peticion object at 0x7ff7aeefdfa0>, <__main__.Peticion object at 0x7ff7ae6ed310>, <__main__.Peticion object at 0x7ff7ae6c5a30>, <__main__.Peticion object at 0x7ff7aee8b8b0>]
+MainThread run_blocking_tasks: Peticiones hipotecas reprocesar [<__main__.Peticion object at 0x7fe16952bfa0>, <__main__.Peticion object at 0x7fe169441a30>, <__main__.Peticion object at 0x7fe168cb2d60>, <__main__.Peticion object at 0x7fe1694480d0>, <__main__.Peticion object at 0x7fe16314bbe0>]
 MainThread run_blocking_tasks: Inicia tarea procesamiento
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:57495/devtools/browser/deb8f9a7-3f4b-4f65-ab30-381061e26840
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:57479/devtools/browser/a3810944-51f4-47e3-b3ef-d98135c07e59
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-5_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-5_0 run_blocking_tasks: Ruta: empresas-activas_1.csv
+ThreadPoolExecutor-5_0 run_blocking_tasks: Ruta: ./data/empresas-activas_1.csv
 ThreadPoolExecutor-5_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089&page=2
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:58743/devtools/browser/3df4bc23-4c20-45a6-9643-f16c77d19e41
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:33395/devtools/browser/b6a2ea0d-2b34-43e8-a7ef-f2b4734228b3
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-6_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-6_0 run_blocking_tasks: Ruta: empresas-activas_2.csv
+ThreadPoolExecutor-6_0 run_blocking_tasks: Ruta: ./data/empresas-activas_2.csv
 ThreadPoolExecutor-6_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089&page=3
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:55161/devtools/browser/d3f70142-90c4-4428-9039-4f28a8759f2c
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:60217/devtools/browser/2efaafbe-d15e-4b64-9095-3bb99b2ea331
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-7_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-7_0 run_blocking_tasks: Ruta: empresas-activas_3.csv
+ThreadPoolExecutor-7_0 run_blocking_tasks: Ruta: ./data/empresas-activas_3.csv
 ThreadPoolExecutor-7_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089&page=4
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:56485/devtools/browser/d0633309-d069-454d-82f0-f2173e6b2818
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:44637/devtools/browser/85f69fce-a046-4437-a39a-824c3ba02311
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-8_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-8_0 run_blocking_tasks: Ruta: empresas-activas_4.csv
+ThreadPoolExecutor-8_0 run_blocking_tasks: Ruta: ./data/empresas-activas_4.csv
 ThreadPoolExecutor-8_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Inicia procesar web-scraping
 MainThread run_blocking_tasks: Url: https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089&page=5
-[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:54585/devtools/browser/b1c00888-a7e7-45ed-8aea-8bc69b7b84ab
+[I:pyppeteer.launcher] Browser listening on: ws://127.0.0.1:41139/devtools/browser/d1adf312-bf44-4240-a89b-2198a665ade5
 [I:pyppeteer.launcher] terminate chrome process...
 MainThread run_blocking_tasks: Finaliza procesar web-scraping
 ThreadPoolExecutor-9_0 run_blocking_tasks: Inicia exportar csv
-ThreadPoolExecutor-9_0 run_blocking_tasks: Ruta: empresas-activas_5.csv
+ThreadPoolExecutor-9_0 run_blocking_tasks: Ruta: ./data/empresas-activas_5.csv
 ThreadPoolExecutor-9_0 run_blocking_tasks: Finaliza exportar csv
 MainThread run_blocking_tasks: Finaliza tarea procesamiento
-
+MainThread run_blocking_tasks: Peticiones empresas reprocesar [<__main__.Peticion object at 0x7fe16952bfd0>, <__main__.Peticion object at 0x7fe16943b8b0>, <__main__.Peticion object at 0x7fe163180130>, <__main__.Peticion object at 0x7fe163180a90>, <__main__.Peticion object at 0x7fe16849a5e0>]
+MainThread run_blocking_tasks: Finaliza procesamiento
 ```
