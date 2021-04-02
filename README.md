@@ -23,7 +23,7 @@ La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Mig
 1. Lawson, R. (2015). _Web Scraping with Python_. Packt Publishing Ltd. Chapter 2. Scraping the Data.
 2. Mitchel, R. (2015). _Web Scraping with Python: Collecting Data from the Modern Web_. O'Reilly Media, Inc. Chapter 1. Your First Web Scraper.
 
-###Ejemplo Salida
+### Ejemplo Salida
 
 MainThread run_blocking_tasks: Inicia tarea procesamiento
 MainThread run_blocking_tasks: Inicia procesar web-scraping
