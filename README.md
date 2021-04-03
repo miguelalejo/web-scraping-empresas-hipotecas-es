@@ -22,7 +22,7 @@ La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Mig
 ## Ficheros del código fuente
 
 * **src/web-scraper-esri.py**: punto de entrada al programa. Inicia el proceso de scraping. Contiene la implementación multihilo para extraer un conjunto de datos inicala a partir de la base de las bases de datos online [Hipoetecas(2003-2018)](https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089) y [Empresas(2017-1999)](https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089).
-* **src/data**: contiene los datos extraidos de las fuentes sin trateminto.
+* **src/data**: contiene los datos extraidos de las fuentes sin tratamiento.
 * 
 
 ## Recursos
