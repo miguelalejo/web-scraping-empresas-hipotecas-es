@@ -14,16 +14,14 @@ En este caso debido a la versatilidad de la implementación del código fuente e
 Empresas activas: Este servicio muestra las empresas activas por provincia y condición jurídica (2017-1999).
 Hipotecas: Este servicio muestra las Hipotecas constituidas sobre el total de fincas por provincias y por meses (2003-2018).
 ### Datos sin tratamiento:
-Las listas de los archivos cvs con los datos sin tratamiento se encuentran en la capeta src/data, en donde el índice de en el nombre se remplaza x por el índice de la página tabulada. 
+Las listas de los archivos cvs con los datos sin tratamiento se encuentran en la capeta *src/data*, en donde el índice de en el nombre se remplaza x por el índice de la página tabulada. 
 * empresas-activas_x.csv
 * hipotecas-constituidas_x.csv
 
 ### Datos procesados:
-En este caso se presentan dos conjuntos de datos luego del tratamiento el primero corresponde a la unión de los datos de las empresas e hipotecas, en donde se busca conservar los datos de información geográficas y los índices comunes que los relaciones. El segundo es un sub-conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012).
+Las listas de los archivos cvs con los datos sin tratamiento se encuentran en la capeta *csv*. En este caso se presentan dos conjuntos de datos luego del tratamiento el primero corresponde a la unión de los datos de las empresas e hipotecas, en donde se busca conservar los datos de información geográficas y los índices comunes que los relaciones. El segundo es un sub-conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012).
 * empresas_hipotecas_españa.csv
 * empresas_hipotecas_españa_2012_2017.csv
-
-
 
 ## Miembros del equipo
 
@@ -31,10 +29,15 @@ La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Mig
 
 ## Ficheros del código fuente
 
-* **src/web-scraper-esri.py**: punto de entrada al programa. Inicia el proceso de scraping. Contiene la implementación multihilo para extraer un conjunto de datos inicala a partir de la base de las bases de datos online [Hipoetecas(2003-2018)](https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089) y [Empresas(2017-1999)](https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089).
-* **src/
-* **src/data**: contiene los datos extraidos de las fuentes sin tratamiento.
-* **src/
+* **src/web-scraper-esri.py:** punto de entrada al programa. Inicia el proceso de scraping. Contiene la implementación multihilo para extraer un conjunto de datos inicala a partir de la base de las bases de datos online [Hipoetecas(2003-2018)](https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089) y [Empresas(2017-1999)](https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089).
+* **src/mdl-procesar-csv:** Notebook con los métodos para realizar el procesamiento y tratamiento de datos.
+* **src/mdl-graficos-csv.ipynb:** Notebook con las representaciones gráficas de los datos procesados.
+* **src/mdl-regresion-csv.ipynb:** Notebook con un ejemplo de regresión aplicada al conjunto de datos.
+* **src/data**: contiene los datos extraídos de las fuentes sin tratamiento.
+* **csv/empresas_hipotecas_españa.csv:** Conjunto de datos que representa la unión de los datos de las empresas e hipotecas.
+* **csv/empresas_hipotecas_españa_2012_2017.csv** Conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012).
+* **pdf:** Resolución de la actividad.
+
 
 ## Recursos
 
