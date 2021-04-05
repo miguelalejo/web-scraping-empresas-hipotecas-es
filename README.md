@@ -1,4 +1,9 @@
 # Práctica 1: Web scraping
+
+## Miembros del equipo
+
+La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Miguel Alejandro Ponce**.
+
 ## Descripción
 
 La información se ha seleccionado en un contexto de análisis de recursos información económica e hipotecas de empresas por provincia en España. El sitio web es un recurso de open data para el análisis de información de diversos contenidos de datos abiertos con geo-referenciación para que se puedan consultar y analizar. Se elige el sitio web debido a que presentan diversos conjuntos de datos y posibles relacionados por tanto es posible realizar cruces de información y generar nuevos sub-conjuntos con mayores características.
@@ -23,9 +28,7 @@ Las listas de los archivos cvs con los datos sin tratamiento se encuentran en la
 * empresas_hipotecas_españa.csv
 * empresas_hipotecas_españa_2012_2017.csv
 
-## Miembros del equipo
 
-La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Miguel Alejandro Ponce**.
 
 ## Ficheros del código fuente
 
