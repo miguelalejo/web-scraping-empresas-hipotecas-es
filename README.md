@@ -1,7 +1,7 @@
 # Práctica 1: Web scraping
 ## Descripción
 
-La información se ha seleccionado en un contexto de análisis de recursos información económica e hipotecas de empresas por provincia en España. El sitio web es un recurso de open data para el análisis de información de diversos contenidos de datos abiertos para que se puedan consultar y analizar. Se elige el sitio web debido a que presentan los conjuntos de datos y posibles datos relacionados por tanto es posible realizar cruces de información y generar conjuntos de datos con mayores características.
+La información se ha seleccionado en un contexto de análisis de recursos información económica e hipotecas de empresas por provincia en España. El sitio web es un recurso de open data para el análisis de información de diversos contenidos de datos abiertos con geo-referenciación para que se puedan consultar y analizar. Se elige el sitio web debido a que presentan diversos conjuntos de datos y posibles relacionados por tanto es posible realizar cruces de información y generar nuevos sub-conjuntos con mayores características.
 
 
 ## Detalle solución y complejidad
@@ -9,10 +9,20 @@ La información se ha seleccionado en un contexto de análisis de recursos infor
 Se presenta una solución que permite la extracción de contenido web dinámico, en donde la presentación del contenido corresponde a cargas parciales de secciones cargadas de manera asíncrona. Se hace uso de programación multihilo y procesamiento de tareas para optimizar los tiempos de respuesta diferenciando entre los procesos de extracción de contenido web y la generación de los documentos csv. En este caso se generan inicialmente varios ficheros luego de extraer el contenido de las diferentes pestañas de una página. Luego, se realizará un procesamiento de tratamiento de los datos e integración de la fuentes de información.
 
 ## Dataset
+
 En este caso debido a la versatilidad de la implementación del código fuente es posible utilizar el mismo código para extraer información de diferentes repositorios del portal. En este caso se realizará la integración de dos fuentes tenemos:
 Empresas activas: Este servicio muestra las empresas activas por provincia y condición jurídica (2017-1999).
-Hipotecas: Este servicio muestra las Hipotecas constituidas sobre el total de fincas por provincias y por meses(2003-2018).
-empresas_hipotecas_españa_2013_2017.csv
+Hipotecas: Este servicio muestra las Hipotecas constituidas sobre el total de fincas por provincias y por meses (2003-2018).
+### Datos sin tratamiento:
+Las listas de los archivos cvs con los datos sin tratamiento se encuentran en la capeta src/data, en donde el índice de en el nombre se remplaza x por el índice de la página tabulada. 
+* empresas-activas_x.csv
+* hipotecas-constituidas_x.csv
+
+### Datos procesados:
+En este caso se presentan dos conjuntos de datos luego del tratamiento el primero corresponde a la unión de los datos de las empresas e hipotecas, en donde se busca conservar los datos de información geográficas y los índices comunes que los relaciones. El segundo es un sub-conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012).
+* empresas_hipotecas_españa.csv
+* empresas_hipotecas_españa_2012_2017.csv
+
 
 
 ## Miembros del equipo
@@ -22,8 +32,9 @@ La actividad ha sido realizada de manera grupal por **Juan Pablo Upoff** y **Mig
 ## Ficheros del código fuente
 
 * **src/web-scraper-esri.py**: punto de entrada al programa. Inicia el proceso de scraping. Contiene la implementación multihilo para extraer un conjunto de datos inicala a partir de la base de las bases de datos online [Hipoetecas(2003-2018)](https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089) y [Empresas(2017-1999)](https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089).
+* **src/
 * **src/data**: contiene los datos extraidos de las fuentes sin tratamiento.
-* 
+* **src/
 
 ## Recursos
 
