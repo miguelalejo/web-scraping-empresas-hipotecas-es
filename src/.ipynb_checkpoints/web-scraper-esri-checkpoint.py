@@ -1,20 +1,19 @@
+#Se importan las librerías necesarias
 import asyncio
 import pyppeteer as pyp
-from pyppeteer import launch
-from bs4 import BeautifulSoup
-import numpy as np
-import pandas as pd
-import threading
-import logging
-from concurrent.futures import ProcessPoolExecutor
-import asyncio
 import concurrent.futures
 import logging
 import sys
 import time
+import numpy as np
+import pandas as pd
+import threading
+from pyppeteer import launch
+from bs4 import BeautifulSoup
+from concurrent.futures import ProcessPoolExecutor
 
 
-
+#Clase utilizada para relacionar las peticiones hacia las urls y los archivos csv.
 class Peticion:
     def __init__(self, url, csv):
         self.url = url
@@ -26,6 +25,10 @@ class Peticion:
 def tratamiento_cabeceras(cadena):
     return cadena.replace('\n', '').replace(" ", "")
 
+#Método utilizado como tarea para realizar la exportación de contenido web en un archivo cvs.
+#Este métod extrae únicamente el contenidos de las tablas en formato HTML.
+#peticion: El cual contiene la URL a procesar y la ruta donde se guardara el resultado cvs del procesamiento.
+#contenido: Corresponde al contedio en formato html del sitio procesado.
 def procesar_data(peticion,contenido):
     log = logging.getLogger('run_blocking_tasks')
     log.info('Inicia exportar csv')
@@ -49,6 +52,10 @@ def procesar_data(peticion,contenido):
     df.to_csv(peticion.csv)
     log.info('Finaliza exportar csv')
         
+#Método ascricronico para realizar el web-scraping, se definen los parámetros. 
+#Este método procesa peticiones de manera asincrona utiliznado las librerías pyppeteer.
+#peticion: El cual contiene la URL a procesar y la ruta donde se guardara el resultado del procesamiento.
+#nfilas: Corresponde al número de filas en cada pestaña.
 async def procesar_web_scraping(peticion,nfilas): 
     log = logging.getLogger('run_blocking_tasks')
     log.info('Inicia procesar web-scraping')
@@ -67,8 +74,12 @@ async def procesar_web_scraping(peticion,nfilas):
     loop = asyncio.get_event_loop()
     tareas = [loop.run_in_executor(executor, procesar_data, peticion,contenido)]
     await asyncio.wait(tareas)
-    return contenido
 
+#Método utilizado para procesar cada uno de las pestañas de una URL, se definen los parámetros. 
+#cvs_path: Ruta donde se guardaran los archivos generados.
+#nfilas: Corresponde al número de filas en cada pestaña.
+#npaginas: Corresponde al número de pestañas del sitio web. 
+#nMaxfilas: Corresponde al número máximo de filas a procesar. 
 def tarea_procesamiento_web_scraping(url_base,cvs_path,npaginas=1,nfilas=11,nMaxfilas=5):
     log = logging.getLogger('run_blocking_tasks')
     log.info('Inicia tarea procesamiento')    
@@ -87,7 +98,7 @@ def tarea_procesamiento_web_scraping(url_base,cvs_path,npaginas=1,nfilas=11,nMax
             peticion = Peticion(url, cvs)
             lista_peticiones.append(peticion)
         try:            
-            contenido = event_loop.run_until_complete(procesar_web_scraping(peticion,nfilas))                        
+            event_loop.run_until_complete(procesar_web_scraping(peticion,nfilas))                        
         except Exception as e:            
             log.info("Error al procesar la url:{furl}".format(furl=url))  
         finally:
@@ -95,14 +106,18 @@ def tarea_procesamiento_web_scraping(url_base,cvs_path,npaginas=1,nfilas=11,nMax
     log.info('Finaliza tarea procesamiento')
     return peticiones_reproceso
 
-
+#Inicio de la aplicacion
 if __name__ == '__main__':    
     logging.basicConfig(
         level=logging.INFO,
         format='%(threadName)10s %(name)18s: %(message)s',
         stream=sys.stderr,
     )
-    
+    #Se defiene la URL de donde se van a extraer los datos y otros parámetros.
+    #cvs_path: Ruta donde se guardaran los archivos generados.
+    #nfilas: Corresponde al número de filas en cada pestaña.
+    #npaginas: Corresponde al número de pestañas del sitio web. 
+    #nMaxfilas: Corresponde al número máximo de filas a procesar. 
     nfilas = 10
     event_loop = asyncio.get_event_loop()
     log = logging.getLogger('run_blocking_tasks')
@@ -110,12 +125,17 @@ if __name__ == '__main__':
     cvs_path = './data/hipotecas-constituidas_{fname}.csv'    
     npaginas = 5
     nMaxfilas = 3
+    #Se defiene la URL de donde se van a extraer los datos y otros parámetros.
+    #cvs_path: Ruta donde se guardaran los archivos generados.
+    #nfilas: Corresponde al número de filas en cada pestaña.
+    #npaginas: Corresponde al número de pestañas del sitio web. 
+    #nMaxfilas: Corresponde al número máximo de filas a procesar. 
     lista_reprocesamiento_hipotecas = tarea_procesamiento_web_scraping(url_base,cvs_path,npaginas,nfilas,nMaxfilas)
     log.info('Peticiones hipotecas reprocesar {fhip}'.format(fhip=lista_reprocesamiento_hipotecas))
     url_base = 'https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089'
     cvs_path = './data/empresas-activas_{fname}.csv'    
     npaginas = 5
-    nMaxfilas = 3
+    nMaxfilas = 3    
     lista_reprocesamiento_empresas = tarea_procesamiento_web_scraping(url_base,cvs_path,npaginas,nfilas,nMaxfilas)
     log.info('Peticiones empresas reprocesar {femp}'.format(femp=lista_reprocesamiento_empresas))
     event_loop.close()
