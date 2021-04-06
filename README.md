@@ -2,7 +2,7 @@
 
 ## Miembros del equipo
 
-La actividad ha sido realizada de manera grupal por **Juan Pablo Uphoff** y **Miguel Alejandro Ponce**.
+La actividad ha sido realizada de manera grupal por **Juan Pablo Uphoff Salas** y **Miguel Alejandro Ponce**.
 
 ## Descripción
 
@@ -47,6 +47,7 @@ Los datos recogidos incluyen información desde enero de 2003 hasta 2018, aunque
 
 ## Propietario de los datos, análisis previos y posibles estudios.
 El portal web www.opendata.esri.es, operado por Esri España, pone a disposición de cualquier usuario multitud de contenidos de acceso libre, los cuales se pueden consultar, analizar o descargar. Además de ofrecer sus propios datos, recopila y ofrece al público diversos datasets de otros portales de acceso libre. En nuestro caso, los datos son del Instituto Nacional de Estadística Español (INE).
+
 Tanto el dataset sobre empresas activas como el de hipotecas constituidas sobre el total de fincas, han sido utilizados en distintos estudios, tanto en el ámbito académico como fuera de él. Antón y Matarazzo (2015)  estudian la relación existente entre la crisis económica en España, utilizando las hipotecas como proxy con el que medir el desarrollo económico, y la vuelta a Ecuador de aquellos que emigraron a España en la década de los dos mil. Por otro lado, los datos de empresas activas son a menudo empleados en informes y estudios sobre la coyuntura económica española. Un ejemplo son los boletines del Banco de España, en cuyo último número (enero de 2021) se analiza el impacto de la crisis causada por la COVID-19 en el tejido empresarial español, con el resultado obvio de una tremenda disminución de las empresas activas. 
 
 En nuestro caso, hemos considerado que el análisis conjunto de dos indicadores concluyentes de la marcha de la economía española, puede servir para potenciar y optimizar los análisis previos. Por lo general, los estos estudios no tratan simultáneamente la parte de la demanda y la de la oferta, por lo que nuestro nuevo conjunto de datos, al incluir variables elementales de la demanda privada (hipotecas) y de la oferta, utilizando el número de empresas como proxy para la oferta de bienes y servicios, puede ser de gran utilidad para el análisis de la situación de la economía. Especialmente interesante será cuando los datos de 2020 estén disponibles, pues incluye los datos de la pandemia. Un posible caso de estudio podría ser un análisis de la deslocalización de las hipotecas y las empresas, pues son muchos los ciudadanos que han trasladado su residencia –y en algunos casos, también sus empresas- de grandes centros urbanos a pequeños municipios. Algunas de las tesis a responder pueden ser las siguientes: ¿En qué provincias ha aumentado más la compra de viviendas? ¿Hay relación entre compra de vivienda y aumento de empresas activas en tal región? ¿Qué tipo de empresa se constituye más? 
