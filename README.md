@@ -65,6 +65,8 @@ Nuestros datos estarán bajo la licencia CC0. Bajo esta licencia, se liberan los
 * **src/data**: contiene los datos extraídos de las fuentes sin tratamiento.
 * **csv/empresas_hipotecas_españa.csv:** Conjunto de datos que representa la unión de los datos de las empresas e hipotecas.
 * **csv/empresas_hipotecas_españa_2012_2017.csv** Conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012).
+* **csv/empresas_hipotecas_españa_2012_2017_importe_hipotecas** Conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012) y son del tipo importe hipotecas.
+* **empresas_hipotecas_españa_2012_2017_numero_hipotecas.csv** Conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012) y son del tipo número hipotecas.
 * **pdf:** Resolución de la actividad.
 
 
@@ -77,6 +79,7 @@ Nuestros datos estarán bajo la licencia CC0. Bajo esta licencia, se liberan los
 
 ### Ejemplo Salida
 
+Ejecutar la línea: python3 web-scraper-esri.py
 ```js
 MainThread run_blocking_tasks: Inicia tarea procesamiento
 MainThread run_blocking_tasks: Inicia procesar web-scraping
