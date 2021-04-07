@@ -38,7 +38,7 @@ Los campos que incluye el dataset son los siguientes:
 *	shape_Area: indentificador geográfico I
 *	shape_Length: identificador geográfico II
 *	TipoEmpresa: tipo de empresa según su forma jurídica.
-*	TipoHipoteca (DIVIDIR esta variable):¿?????????¿????????? variable categórica que toma los valores “importe_hipotecas”; importe total de hipotecas por provincias y por meses, en miles de euros, o “numero_hipotecas”; número total de hipotecas constituidas sobre el total de fincas por provincias y por meses.
+*	TipoHipoteca: toma los valores “importe_hipotecas”; importe total de hipotecas por provincias y por meses, en miles de euros, o “numero_hipotecas”; número total de hipotecas constituidas sobre el total de fincas por provincias y por meses.
 * M01,…,M12: meses, donde M01 refiere a enero y M12 a diciembre.
 
 
