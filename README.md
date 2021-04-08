@@ -53,7 +53,11 @@ Tanto el dataset sobre empresas activas como el de hipotecas constituidas sobre 
 En nuestro caso, hemos considerado que el análisis conjunto de dos indicadores concluyentes de la marcha de la economía española, puede servir para potenciar y optimizar los análisis previos. Por lo general, los estos estudios no tratan simultáneamente la parte de la demanda y la de la oferta, por lo que nuestro nuevo conjunto de datos, al incluir variables elementales de la demanda privada (hipotecas) y de la oferta, utilizando el número de empresas como proxy para la oferta de bienes y servicios, puede ser de gran utilidad para el análisis de la situación de la economía. Especialmente interesante será cuando los datos de 2020 estén disponibles, pues incluye los datos de la pandemia. Un posible caso de estudio podría ser un análisis de la deslocalización de las hipotecas y las empresas, pues son muchos los ciudadanos que han trasladado su residencia –y en algunos casos, también sus empresas- de grandes centros urbanos a pequeños municipios. Algunas de las tesis a responder pueden ser las siguientes: ¿En qué provincias ha aumentado más la compra de viviendas? ¿Hay relación entre compra de vivienda y aumento de empresas activas en tal región? ¿Qué tipo de empresa se constituye más? 
 
 ## Licencia
-Nuestros datos estarán bajo la licencia CC0. Bajo esta licencia, se liberan los derechos de propiedad intelectual y cualquier usuario puede hacer un uso libre de ella. Somos firmes defensores del software libre y del código abierto, pues consideramos que en un mundo tecnológico cada vez más monopolizado por grandes empresas, ofrecer un trabajo que puede beneficiar a cualquier persona del mundo, es un paso hacia la libertad individual y colectiva. 
+Nuestros datos estarán bajo la licencia CC0. Bajo esta licencia, se liberan los derechos de propiedad intelectual y cualquier usuario puede hacer un uso libre de ella. Somos firmes defensores del software libre y del código abierto, pues consideramos que en un mundo tecnológico cada vez más monopolizado por grandes empresas, ofrecer un trabajo que puede beneficiar a cualquier persona del mundo, es un paso hacia la libertad individual y colectiva.
+
+Enlace Zenodo
+
+https://zenodo.org/record/4671603 DOI: 10.5281/zenodo.4671603
 
 
 ## Ficheros del código fuente
@@ -67,7 +71,7 @@ Nuestros datos estarán bajo la licencia CC0. Bajo esta licencia, se liberan los
 * **csv/empresas_hipotecas_españa_2012_2017.csv** Conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012).
 * **csv/empresas_hipotecas_españa_2012_2017_importe_hipotecas** Conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012) y son del tipo importe hipotecas.
 * **empresas_hipotecas_españa_2012_2017_numero_hipotecas.csv** Conjunto de datos del cual se extrae únicamente aquellos tipos que tienen hipotecas reportadas (están son registradas a partir del año 2012) y son del tipo número hipotecas.
-* **pdf:** Resolución de la actividad.
+* **webscr_practica1.pdf** Resolución de la actividad.
 
 
 ## Recursos
