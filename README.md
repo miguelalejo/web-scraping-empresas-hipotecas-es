@@ -62,7 +62,7 @@ https://zenodo.org/record/4671603 DOI: 10.5281/zenodo.4671603
 
 ## Ficheros del código fuente
 
-* **src/web-scraper-esri.py:** punto de entrada al programa. Inicia el proceso de scraping. Contiene la implementación multihilo para extraer un conjunto de datos inicala a partir de la base de las bases de datos online [Hipotecas(2003-2018)](https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089) y [Empresas(2017-1999)](https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089).
+* **src/web-scraper-esri.py:** punto de entrada al programa. Inicia el proceso de scraping. Contiene la implementación multihilo para extraer un conjunto de datos inicial a partir de la base de las bases de datos online [Hipotecas(2003-2018)](https://opendata.esri.es/datasets/hipotecas-constituidas-sobre-fincas/data?geometry=-36.558%2C29.677%2C22.725%2C42.089) y [Empresas(2017-1999)](https://opendata.esri.es/datasets/empresas-activas-por-provincias/data?geometry=-36.558%2C29.677%2C22.725%2C42.089).
 * **src/mdl-procesar-csv:** Notebook con los métodos para realizar el procesamiento y tratamiento de datos.
 * **src/mdl-graficos-csv.ipynb:** Notebook con las representaciones gráficas de los datos procesados.
 * **src/mdl-regresion-csv.ipynb:** Notebook con un ejemplo de regresión aplicada al conjunto de datos.
