@@ -55,7 +55,7 @@ En nuestro caso, hemos considerado que el análisis conjunto de dos indicadores 
 ## Licencia
 Nuestros datos estarán bajo la licencia CC0. Bajo esta licencia, se liberan los derechos de propiedad intelectual y cualquier usuario puede hacer un uso libre de ella. Somos firmes defensores del software libre y del código abierto, pues consideramos que en un mundo tecnológico cada vez más monopolizado por grandes empresas, ofrecer un trabajo que puede beneficiar a cualquier persona del mundo, es un paso hacia la libertad individual y colectiva.
 
-Enlace Zenodo
+## Enlace Zenodo
 
 https://zenodo.org/record/4671603 DOI: 10.5281/zenodo.4671603
 
